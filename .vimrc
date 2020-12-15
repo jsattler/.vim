@@ -12,3 +12,5 @@ syntax on
 
 " map leader to space
 let mapleader = " "
+
+set laststatus=2
