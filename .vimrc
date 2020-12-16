@@ -23,6 +23,9 @@ set nu rnu
 
 " tab related stuff
 set tabstop=4                   " The width of a TAB is set to 4.
+set shiftwidth=4
+
+set scrolloff=20				" add some lines when reaching EOF
 
 nnoremap <Leader>w :w<CR>		" save keep file open	
 inoremap jk <ESC>
