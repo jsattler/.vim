@@ -1,25 +1,33 @@
-" set color scheme to one dark
-colorscheme onedark
+set encoding=utf-8              " set encoding to utf-8
 
-" avoid annoying sound on errors
-set noerrorbells
+colorscheme onedark             " set color scheme to one dark
 
-" show numbers on the left side
-set number
+set noerrorbells                " avoid annoying sound on errors
 
-" turn identation on
-filetype plugin indent on 
+set number                      " show numbers on the left side
 
-" turn on syntax highlighting
-syntax on
+filetype plugin indent on       " turn identation on
 
-" map leader to space
-let mapleader = " "
+syntax on                       " turn on syntax highlighting
 
-" required for the lightline plugin
-set laststatus=2
+nnoremap <SPACE> <Nop>          " make sure space does not have a mapping
 
-" automatic close brackets etc.
+let mapleader = " "             " map leader to space
+
+set laststatus=2                " required for the lightline plugin
+
+autocmd vimenter * NERDTree     " automatically open nerdtree
+                            
+set number relativenumber       " turn hybrid line numbers on
+set nu rnu
+
+" tab related stuff
+set tabstop=4                   " The width of a TAB is set to 4.
+
+nnoremap <Leader>w :w<CR>		" save keep file open	
+inoremap jk <ESC>
+
+" auto-closing stuff
 inoremap " ""<left>
 inoremap ' ''<left>
 inoremap ( ()<left>
