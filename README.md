@@ -1,4 +1,4 @@
-`VIM` Configuration
+`VIM` Run Commands, Plugins and Color Schemes
 ===
 
 This is my personal vim configuration including plugins and color schemes.
