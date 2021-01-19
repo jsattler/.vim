@@ -9,7 +9,7 @@ Install
 Clone the repository into your home directory (assuming no `.vim` directory exists).
 
 ```bash
-git clone https://github.com/j-sattler/.vim.git && ln -sf ~/.vim/.vimrc ~/.vimrc
+git clone --recurse-submodules https://github.com/j-sattler/.vim.git ~/.vim && ln -sf ~/.vim/.vimrc ~/.vimrc
 ```
 
 
